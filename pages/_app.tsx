@@ -1,13 +1,13 @@
-import { HelloWorld } from "../src/components/HelloWorld";
 import "../public/css/styles.css";
 import React from "react";
+import Layout from "src/layout/layout1";
 
-function HomePage() {
+export default function MyApp({ Component, pageProps }) {
   return (
-    <React.StrictMode>
-      <HelloWorld />
-    </React.StrictMode>
+    <Layout>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <Component {...pageProps} />
+    </Layout>
   );
 }
-
-export default HomePage;
