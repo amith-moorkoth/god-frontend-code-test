@@ -1,4 +1,21 @@
 body {
-  background: steelblue;
-  color: white;
+  background: white;
+  color: black;
+  margin: 0px !important;
+  background: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/banner-2400x720-new?qlt=82&wid=1400&ts=1629721903356&dpr=off&fit=constrain);
+  background-repeat: repeat-y;
+}
+
+/* Show on mobile */
+@media (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+}
+
+/* Show on large screens */
+@media (min-width: 769px) {
+  .hidden-on-large {
+    display: none;
+  }
 }
